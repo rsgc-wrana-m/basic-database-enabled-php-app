@@ -5,8 +5,6 @@
   <meta charset="utf-8">
 
   <title>Royal St. George's College – Library</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
