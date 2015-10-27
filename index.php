@@ -56,5 +56,12 @@
   echo "</table>";
 
   ?>
+  <h1>Add a title to the library database:</h1>
+  <form action="addBookHandler.php" method="post">
+    Book title:<br>
+    <input type="text" name="title" value="">
+    <br>
+    <input type="submit" value="Submit">
+  </form> 
 </body>
 </html>
