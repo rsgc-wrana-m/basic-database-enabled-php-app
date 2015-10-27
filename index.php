@@ -17,6 +17,10 @@
 
 <body>
   <script src="js/scripts.js"></script>
+<<<<<<< HEAD
   <p>Welcome to the Royal St. George's Library website! We welcome everyone.</p>
+=======
+  <p>Welcome to the Royal St. George's Library website! Have a nice day.</p>
+>>>>>>> 3effbfe7fd5b7dfa1d1d3d1ca142d2908eaa913c
 </body>
 </html>
