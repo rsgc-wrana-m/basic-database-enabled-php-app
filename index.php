@@ -17,10 +17,46 @@
 
 <body>
   <script src="js/scripts.js"></script>
-<<<<<<< HEAD
-  <p>Welcome to the Royal St. George's Library website! We welcome everyone.</p>
-=======
   <p>Welcome to the Royal St. George's Library website! Have a nice day.</p>
->>>>>>> 3effbfe7fd5b7dfa1d1d3d1ca142d2908eaa913c
+  <h1>Library Books Available</h1>
+  
+  <?php
+  // set database connection parameters
+  $host = "127.0.0.1";
+  $user = "rgordonatrsgc";
+  $pass = "";
+  $db = "library";
+  $port = 3306;
+  
+  // establish the connection
+  $connection = mysqli_connect($host, $user, $pass, $db, $port) or die(mysql_error());
+  
+  // And now perform simple query – make sure it's working
+  $query = "SELECT * FROM book;";
+  $result = mysqli_query($connection, $query);
+  
+  // Iterate over the result set
+  echo "<table>";
+  echo "<tr>";
+  echo "<th>";
+  echo "ID";
+  echo "</th>";
+  echo "<th>";
+  echo "Book Title";
+  echo "</th>";
+  echo "</tr>";
+  while ($row = mysqli_fetch_assoc($result)) {
+      echo "<tr>";
+      echo "<td>";
+      echo $row['id'];
+      echo "</td>";
+      echo "<td>";
+      echo $row['title'];
+      echo "</td>";
+      echo "</tr>";
+  }
+  echo "</table>";
+
+  ?>
 </body>
 </html>
